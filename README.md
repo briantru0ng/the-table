@@ -1,2 +1,5 @@
-# the-house
-backend for the greedy gambles webapp
+# the-table
+frontend for the greedy gambles webapp
+all things html and js/css is handled here
+deals with connections to the house (backend)
+
