@@ -37,6 +37,8 @@ credentials: true
 const path = require('path');
 app.use(express.static(path.join(__dirname, 'public'),
   {index: 'welcome.html'}));
+  
+app.use('/static', express.static(path.join(__dirname, 'static')));
 
 // ---------- sockets ----------
 io.on('connection', s => console.log('socket', s.id));

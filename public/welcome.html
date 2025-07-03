@@ -2,16 +2,33 @@
 <html>
 <head>
   <meta charset="utf-8" />
+  <link rel="stylesheet" href="/static/css/welcome.css" />
+  <link rel="stylesheet" href="/static/css/base.css" />
   <title>Greedy Gambles Login</title>
 </head>
 <body>
-  <h2>Join the Game Show</h2>
-  <input id="user" /> <br>
-  <input id="pass" type="password" /> <br>
-  <button onclick="login()">Enter</button> <br>
+  <div class="form-container">
+      <div class="logo-container">
+        Log in
+      </div>
 
-  <button onclick="login()">New User</button>
+      <form class="form">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Enter your username" required=""> 
+          <br>
+          <label for="password">Password</label>
+          <input type="text" id="password" name="password" placeholder="Enter your password" required="">
+        </div>
 
+        <button href="#" class="form-submit-btn" type="submit">Log me in!</button>
+      </form>
+
+      <p class="signup-link">
+        Don't have an account? <br>
+        <a class="signup-link link"> Sign up now</a>
+      </p>
+    </div>
   <!-- Socket.IO client served automatically by Express -->
   <script src="/socket.io/socket.io.js"></script>
 

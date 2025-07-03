@@ -1,0 +1,16 @@
+:root {
+  font-size: 16px;
+  --font-stack: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+html, body {
+  font-family: var(--font-stack);
+  line-height: 1.5;
+  color: #222;
+  margin: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-size: inherit;
+}
